@@ -1,25 +1,68 @@
 "use client"
-
-import { useTranslations } from "next-intl"
+import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { CheckCircle, Clock, Globe, Package, Shield, Truck } from "lucide-react"
+import { Badge } from "@/components/ui/badge"
+import { Calculator, Package, Truck, Globe, CheckCircle, ArrowRight, Clock, Shield } from "lucide-react"
+import Link from "next/link"
+import { LanguageProvider, useLanguage } from "@/components/language-provider"
+import { LanguageSwitcher } from "@/components/language-switcher"
+import { translations } from "@/lib/translations"
 
-export default function Page() {
-  const t = useTranslations("Index")
+function HomePage() {
+  const { language } = useLanguage()
+  const t = translations[language]
 
   return (
-    <main>
+    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
+      {/* Header */}
+      <header className="border-b bg-white/80 backdrop-blur-sm sticky top-0 z-50">
+        <div className="container mx-auto px-4 py-4 flex items-center justify-between">
+          <div className="flex items-center space-x-2">
+            <Package className="h-8 w-8 text-blue-600" />
+            <span className="text-2xl font-bold text-gray-900">FulfillPro</span>
+          </div>
+          <nav className="hidden md:flex items-center space-x-8">
+            <Link href="#services" className="text-gray-600 hover:text-blue-600 transition-colors">
+              {t.services}
+            </Link>
+            <Link href="#pricing" className="text-gray-600 hover:text-blue-600 transition-colors">
+              {t.pricing}
+            </Link>
+            <Link href="#about" className="text-gray-600 hover:text-blue-600 transition-colors">
+              {t.about}
+            </Link>
+            <Link href="/contact" className="text-gray-600 hover:text-blue-600 transition-colors">
+              {t.contact}
+            </Link>
+            <Link href="/calculator">
+              <Button className="bg-blue-600 hover:bg-blue-700">
+                <Calculator className="h-4 w-4 mr-2" />
+                {t.calculator}
+              </Button>
+            </Link>
+          </nav>
+          <LanguageSwitcher />
+        </div>
+      </header>
+
       {/* Hero Section */}
-      <section className="py-24 px-4 bg-white">
+      <section className="py-20 px-4">
         <div className="container mx-auto text-center">
-          <h1 className="text-5xl font-bold text-gray-900 mb-8">{t.heroTitle}</h1>
-          <p className="text-2xl text-gray-600 mb-12">{t.heroSubtitle}</p>
-          <a
-            href="#contact"
-            className="inline-block bg-blue-600 text-white py-3 px-8 rounded-full hover:bg-blue-700 transition-colors"
-          >
-            {t.getStarted}
-          </a>
+          <Badge className="mb-4 bg-blue-100 text-blue-800 hover:bg-blue-100">{t.heroBadge}</Badge>
+          <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">{t.heroTitle}</h1>
+          <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">{t.heroDescription}</p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="/calculator">
+              <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
+                <Calculator className="h-5 w-5 mr-2" />
+                {t.calculateCosts}
+              </Button>
+            </Link>
+            <Button size="lg" variant="outline">
+              {t.learnMore}
+              <ArrowRight className="h-5 w-5 ml-2" />
+            </Button>
+          </div>
         </div>
       </section>
 
@@ -131,7 +174,7 @@ export default function Page() {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="py-20 px-4 bg-gray-50">
+      <section id="services" className="py-20 px-4">
         <div className="container mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">{t.ourServices}</h2>
@@ -321,18 +364,68 @@ export default function Page() {
       </section>
 
       {/* CTA Section */}
-      <section id="contact" className="py-24 px-4 bg-blue-50">
+      <section className="py-20 px-4 bg-blue-600">
         <div className="container mx-auto text-center">
-          <h2 className="text-4xl font-bold text-blue-900 mb-8">{t.ctaTitle}</h2>
-          <p className="text-xl text-blue-600 mb-12">{t.ctaDescription}</p>
-          <a
-            href="#"
-            className="inline-block bg-blue-600 text-white py-3 px-8 rounded-full hover:bg-blue-700 transition-colors"
-          >
-            {t.contactUs}
-          </a>
+          <h2 className="text-4xl font-bold text-white mb-4">{t.readyToStart}</h2>
+          <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">{t.readyToStartDescription}</p>
+          <Link href="/calculator">
+            <Button size="lg" variant="secondary" className="bg-white text-blue-600 hover:bg-gray-100">
+              <Calculator className="h-5 w-5 mr-2" />
+              {t.calculateNow}
+            </Button>
+          </Link>
         </div>
       </section>
-    </main>
+
+      {/* Footer */}
+      <footer className="bg-gray-900 text-white py-12 px-4">
+        <div className="container mx-auto">
+          <div className="grid md:grid-cols-4 gap-8">
+            <div>
+              <div className="flex items-center space-x-2 mb-4">
+                <Package className="h-6 w-6" />
+                <span className="text-xl font-bold">FulfillPro</span>
+              </div>
+              <p className="text-gray-400">{t.footerDescription}</p>
+            </div>
+            <div>
+              <h3 className="font-semibold mb-4">{t.services}</h3>
+              <ul className="space-y-2 text-gray-400">
+                <li>FBA {t.fulfillment}</li>
+                <li>FBM {t.fulfillment}</li>
+                <li>{t.calculator}</li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="font-semibold mb-4">{t.company}</h3>
+              <ul className="space-y-2 text-gray-400">
+                <li>{t.about}</li>
+                <li>{t.contact}</li>
+                <li>{t.pricing}</li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="font-semibold mb-4">{t.support}</h3>
+              <ul className="space-y-2 text-gray-400">
+                <li>{t.helpCenter}</li>
+                <li>{t.documentation}</li>
+                <li>{t.contactSupport}</li>
+              </ul>
+            </div>
+          </div>
+          <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+            <p>&copy; 2024 FulfillPro. {t.allRightsReserved}</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  )
+}
+
+export default function Page() {
+  return (
+    <LanguageProvider>
+      <HomePage />
+    </LanguageProvider>
   )
 }
