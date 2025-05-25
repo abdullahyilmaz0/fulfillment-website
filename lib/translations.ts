@@ -19,24 +19,85 @@ export const translations = {
     ourServices: "Our Services",
     servicesDescription: "Complete fulfillment solutions for Amazon sellers worldwide",
     fulfillment: "Fulfillment",
-    fbaDescription: "Let Amazon handle storage, packing, and shipping with our FBA prep services.",
-    fbaFeature1: "Amazon Prime eligibility",
-    fbaFeature2: "24/7 customer service",
-    fbaFeature3: "Global shipping network",
-    fbmDescription: "Maintain control over your inventory with our merchant fulfillment services.",
-    fbmFeature1: "Custom packaging options",
-    fbmFeature2: "Direct customer relationships",
-    fbmFeature3: "Flexible shipping methods",
+
+    // FBA Expanded
+    fbaDescriptionExpanded:
+      "Fulfillment by Amazon (FBA) is a comprehensive service where Amazon stores your products in their fulfillment centers, picks, packs, ships, and provides customer service for these products. This allows you to leverage Amazon's world-class logistics network and focus on growing your business while Amazon handles the operational complexities.",
+    fbaFeature1: "Amazon Prime Eligibility",
+    fbaFeature1Detail:
+      "Your products become eligible for Prime free shipping, increasing visibility and sales potential",
+    fbaFeature2: "24/7 Customer Service",
+    fbaFeature2Detail: "Amazon handles all customer inquiries, returns, and refunds in multiple languages",
+    fbaFeature3: "Global Distribution Network",
+    fbaFeature3Detail: "Access to Amazon's worldwide fulfillment centers for faster delivery",
+    fbaFeature4: "Multi-Channel Fulfillment",
+    fbaFeature4Detail: "Use Amazon's network to fulfill orders from other sales channels",
+    fbaProcessTitle: "FBA Process Overview",
+    fbaProcessDescription:
+      "Send inventory → Amazon receives & stores → Customer orders → Amazon picks, packs & ships → Amazon handles customer service",
+
+    // FBM Expanded
+    fbmDescriptionExpanded:
+      "Fulfillment by Merchant (FBM) gives you complete control over your inventory and fulfillment process. You store products in your own warehouse or with a third-party logistics provider, handle picking, packing, shipping, and customer service. This model offers greater flexibility and potentially higher profit margins while maintaining direct customer relationships.",
+    fbmFeature1: "Complete Inventory Control",
+    fbmFeature1Detail: "Maintain full control over stock levels, storage conditions, and inventory management",
+    fbmFeature2: "Custom Branding & Packaging",
+    fbmFeature2Detail: "Create unique unboxing experiences with custom packaging and inserts",
+    fbmFeature3: "Direct Customer Relationships",
+    fbmFeature3Detail: "Build direct relationships with customers through personalized service",
+    fbmFeature4: "Flexible Shipping Options",
+    fbmFeature4Detail: "Choose from multiple carriers and shipping methods to optimize costs",
+    fbmProcessTitle: "FBM Process Overview",
+    fbmProcessDescription:
+      "Store inventory → Receive orders → Pick & pack products → Ship to customers → Handle customer service & returns",
+
+    // Comparison Table
+    fbaVsFbmTitle: "FBA vs FBM Comparison",
+    fbaVsFbmDescription: "Understanding the key differences to choose the right fulfillment method for your business",
+    feature: "Feature",
+    storageLocation: "Storage Location",
+    amazonWarehouses: "Amazon Warehouses",
+    yourWarehouse: "Your Warehouse/3PL",
+    shippingSpeed: "Shipping Speed",
+    primeEligible: "Prime Eligible (1-2 days)",
+    standardShipping: "Standard (3-7 days)",
+    customerService: "Customer Service",
+    amazonHandles: "Amazon Handles",
+    youHandle: "You Handle",
+    inventoryControl: "Inventory Control",
+    limited: "Limited",
+    fullControl: "Full Control",
+    costStructure: "Cost Structure",
+    higherFees: "Higher Fees, Lower Effort",
+    lowerFees: "Lower Fees, More Effort",
+
+    // Process Section
+    howItWorks: "How It Works",
+    howItWorksDescription: "Our streamlined process ensures seamless integration with your business operations",
+    step1Title: "Consultation & Setup",
+    step1Description:
+      "We analyze your business needs and set up customized fulfillment solutions tailored to your products and volume requirements.",
+    step2Title: "Inventory Integration",
+    step2Description:
+      "Seamlessly integrate your inventory management systems with our platform for real-time tracking and automated reordering.",
+    step3Title: "Order Processing",
+    step3Description:
+      "Orders are automatically processed, picked, packed, and shipped using our optimized workflows and quality control measures.",
+    step4Title: "Tracking & Analytics",
+    step4Description:
+      "Monitor performance with detailed analytics, tracking information, and comprehensive reporting tools for continuous optimization.",
 
     // Features
     whyChooseUs: "Why Choose Us",
     whyChooseUsDescription: "We provide reliable, efficient, and cost-effective fulfillment solutions",
     globalReach: "Global Reach",
-    globalReachDescription: "Serve customers worldwide with our international fulfillment network",
+    globalReachDescription:
+      "Serve customers worldwide with our international fulfillment network spanning 15+ countries",
     fastProcessing: "Fast Processing",
-    fastProcessingDescription: "Same-day processing for orders received before 2 PM",
+    fastProcessingDescription: "Same-day processing for orders received before 2 PM with 99.8% accuracy rate",
     secureHandling: "Secure Handling",
-    secureHandlingDescription: "State-of-the-art facilities with 24/7 security monitoring",
+    secureHandlingDescription:
+      "State-of-the-art facilities with 24/7 security monitoring and climate-controlled storage",
 
     // CTA
     readyToStart: "Ready to Start?",
@@ -148,8 +209,7 @@ export const translations = {
     faq3Answer:
       "Storage fees vary by product size and volume. Use our calculator for accurate estimates or contact us for custom pricing.",
     faq4Question: "Can you handle returns and exchanges?",
-    faq4Answer:
-      "Absolutely! We provide complete returns management including inspection, restocking, and customer communication.",
+    faq4Answer: "We provide complete returns management including inspection, restocking, and customer communication.",
   },
   de: {
     // Navigation
@@ -171,24 +231,85 @@ export const translations = {
     ourServices: "Unsere Dienstleistungen",
     servicesDescription: "Komplette Fulfillment-Lösungen für Amazon-Verkäufer weltweit",
     fulfillment: "Fulfillment",
-    fbaDescription: "Lassen Sie Amazon Lagerung, Verpackung und Versand mit unseren FBA-Prep-Services übernehmen.",
+
+    // FBA Expanded
+    fbaDescriptionExpanded:
+      "Fulfillment by Amazon (FBA) ist ein umfassender Service, bei dem Amazon Ihre Produkte in ihren Fulfillment-Zentren lagert, kommissioniert, verpackt, versendet und Kundenservice für diese Produkte bietet. Dies ermöglicht es Ihnen, Amazons erstklassiges Logistiknetzwerk zu nutzen und sich auf das Wachstum Ihres Unternehmens zu konzentrieren, während Amazon die operativen Komplexitäten übernimmt.",
     fbaFeature1: "Amazon Prime Berechtigung",
+    fbaFeature1Detail:
+      "Ihre Produkte werden für Prime kostenlosen Versand berechtigt, was Sichtbarkeit und Verkaufspotential erhöht",
     fbaFeature2: "24/7 Kundenservice",
-    fbaFeature3: "Globales Versandnetzwerk",
-    fbmDescription: "Behalten Sie die Kontrolle über Ihr Inventar mit unseren Merchant-Fulfillment-Services.",
-    fbmFeature1: "Individuelle Verpackungsoptionen",
-    fbmFeature2: "Direkte Kundenbeziehungen",
-    fbmFeature3: "Flexible Versandmethoden",
+    fbaFeature2Detail: "Amazon bearbeitet alle Kundenanfragen, Rücksendungen und Rückerstattungen in mehreren Sprachen",
+    fbaFeature3: "Globales Vertriebsnetzwerk",
+    fbaFeature3Detail: "Zugang zu Amazons weltweiten Fulfillment-Zentren für schnellere Lieferung",
+    fbaFeature4: "Multi-Channel Fulfillment",
+    fbaFeature4Detail: "Nutzen Sie Amazons Netzwerk zur Erfüllung von Bestellungen aus anderen Verkaufskanälen",
+    fbaProcessTitle: "FBA Prozessübersicht",
+    fbaProcessDescription:
+      "Inventar senden → Amazon empfängt & lagert → Kunde bestellt → Amazon kommissioniert, verpackt & versendet → Amazon übernimmt Kundenservice",
+
+    // FBM Expanded
+    fbmDescriptionExpanded:
+      "Fulfillment by Merchant (FBM) gibt Ihnen vollständige Kontrolle über Ihr Inventar und Ihren Fulfillment-Prozess. Sie lagern Produkte in Ihrem eigenen Lager oder bei einem Drittanbieter-Logistikdienstleister, handhaben Kommissionierung, Verpackung, Versand und Kundenservice. Dieses Modell bietet größere Flexibilität und potenziell höhere Gewinnmargen bei gleichzeitiger Aufrechterhaltung direkter Kundenbeziehungen.",
+    fbmFeature1: "Vollständige Inventarkontrolle",
+    fbmFeature1Detail: "Behalten Sie die volle Kontrolle über Lagerbestände, Lagerbedingungen und Inventarverwaltung",
+    fbmFeature2: "Individuelle Markenbildung & Verpackung",
+    fbmFeature2Detail: "Schaffen Sie einzigartige Auspack-Erlebnisse mit individueller Verpackung und Einlagen",
+    fbmFeature3: "Direkte Kundenbeziehungen",
+    fbmFeature3Detail: "Bauen Sie direkte Beziehungen zu Kunden durch personalisierten Service auf",
+    fbmFeature4: "Flexible Versandoptionen",
+    fbmFeature4Detail: "Wählen Sie aus mehreren Spediteuren und Versandmethoden zur Kostenoptimierung",
+    fbmProcessTitle: "FBM Prozessübersicht",
+    fbmProcessDescription:
+      "Inventar lagern → Bestellungen erhalten → Produkte kommissionieren & verpacken → An Kunden versenden → Kundenservice & Rücksendungen bearbeiten",
+
+    // Comparison Table
+    fbaVsFbmTitle: "FBA vs FBM Vergleich",
+    fbaVsFbmDescription:
+      "Die wichtigsten Unterschiede verstehen, um die richtige Fulfillment-Methode für Ihr Unternehmen zu wählen",
+    feature: "Merkmal",
+    storageLocation: "Lagerort",
+    amazonWarehouses: "Amazon Lager",
+    yourWarehouse: "Ihr Lager/3PL",
+    shippingSpeed: "Versandgeschwindigkeit",
+    primeEligible: "Prime berechtigt (1-2 Tage)",
+    standardShipping: "Standard (3-7 Tage)",
+    customerService: "Kundenservice",
+    amazonHandles: "Amazon übernimmt",
+    youHandle: "Sie übernehmen",
+    inventoryControl: "Inventarkontrolle",
+    limited: "Begrenzt",
+    fullControl: "Vollständige Kontrolle",
+    costStructure: "Kostenstruktur",
+    higherFees: "Höhere Gebühren, weniger Aufwand",
+    lowerFees: "Niedrigere Gebühren, mehr Aufwand",
+
+    // Process Section
+    howItWorks: "Wie es funktioniert",
+    howItWorksDescription: "Unser optimierter Prozess gewährleistet nahtlose Integration in Ihre Geschäftsabläufe",
+    step1Title: "Beratung & Einrichtung",
+    step1Description:
+      "Wir analysieren Ihre Geschäftsanforderungen und richten maßgeschneiderte Fulfillment-Lösungen ein, die auf Ihre Produkte und Volumenanforderungen zugeschnitten sind.",
+    step2Title: "Inventar-Integration",
+    step2Description:
+      "Nahtlose Integration Ihrer Inventarverwaltungssysteme mit unserer Plattform für Echtzeit-Tracking und automatische Nachbestellung.",
+    step3Title: "Auftragsbearbeitung",
+    step3Description:
+      "Bestellungen werden automatisch bearbeitet, kommissioniert, verpackt und versendet mit unseren optimierten Arbeitsabläufen und Qualitätskontrollmaßnahmen.",
+    step4Title: "Tracking & Analytics",
+    step4Description:
+      "Überwachen Sie die Leistung mit detaillierten Analysen, Tracking-Informationen und umfassenden Berichtstools für kontinuierliche Optimierung.",
 
     // Features
     whyChooseUs: "Warum uns wählen",
     whyChooseUsDescription: "Wir bieten zuverlässige, effiziente und kostengünstige Fulfillment-Lösungen",
     globalReach: "Globale Reichweite",
-    globalReachDescription: "Bedienen Sie Kunden weltweit mit unserem internationalen Fulfillment-Netzwerk",
+    globalReachDescription:
+      "Bedienen Sie Kunden weltweit mit unserem internationalen Fulfillment-Netzwerk in über 15 Ländern",
     fastProcessing: "Schnelle Bearbeitung",
-    fastProcessingDescription: "Bearbeitung am selben Tag für Bestellungen vor 14 Uhr",
+    fastProcessingDescription: "Bearbeitung am selben Tag für Bestellungen vor 14 Uhr mit 99,8% Genauigkeitsrate",
     secureHandling: "Sichere Handhabung",
-    secureHandlingDescription: "Hochmoderne Einrichtungen mit 24/7 Sicherheitsüberwachung",
+    secureHandlingDescription: "Hochmoderne Einrichtungen mit 24/7 Sicherheitsüberwachung und klimatisierter Lagerung",
 
     // CTA
     readyToStart: "Bereit anzufangen?",
@@ -327,25 +448,84 @@ export const translations = {
     ourServices: "Hizmetlerimiz",
     servicesDescription: "Dünya çapında Amazon satıcıları için eksiksiz fulfillment çözümleri",
     fulfillment: "Fulfillment",
-    fbaDescription:
-      "FBA hazırlık hizmetlerimizle Amazon'un depolama, paketleme ve kargo işlemlerini halletmesine izin verin.",
-    fbaFeature1: "Amazon Prime uygunluğu",
-    fbaFeature2: "7/24 müşteri hizmeti",
-    fbaFeature3: "Küresel kargo ağı",
-    fbmDescription: "Merchant fulfillment hizmetlerimizle envanterinizin kontrolünü elinizde tutun.",
-    fbmFeature1: "Özel paketleme seçenekleri",
-    fbmFeature2: "Doğrudan müşteri ilişkileri",
-    fbmFeature3: "Esnek kargo yöntemleri",
+
+    // FBA Expanded
+    fbaDescriptionExpanded:
+      "Amazon Tarafından Fulfillment (FBA), Amazon'un ürünlerinizi fulfillment merkezlerinde depoladığı, topladığı, paketlediği, gönderdiği ve bu ürünler için müşteri hizmeti sağladığı kapsamlı bir hizmettir. Bu, Amazon'un dünya standartlarındaki lojistik ağından yararlanmanızı ve Amazon operasyonel karmaşıklıkları hallederken işinizi büyütmeye odaklanmanızı sağlar.",
+    fbaFeature1: "Amazon Prime Uygunluğu",
+    fbaFeature1Detail:
+      "Ürünleriniz Prime ücretsiz kargo için uygun hale gelir, görünürlük ve satış potansiyelini artırır",
+    fbaFeature2: "7/24 Müşteri Hizmeti",
+    fbaFeature2Detail: "Amazon tüm müşteri sorularını, iadelerini ve geri ödemelerini birden fazla dilde halleder",
+    fbaFeature3: "Küresel Dağıtım Ağı",
+    fbaFeature3Detail: "Daha hızlı teslimat için Amazon'un dünya çapındaki fulfillment merkezlerine erişim",
+    fbaFeature4: "Çok Kanallı Fulfillment",
+    fbaFeature4Detail: "Diğer satış kanallarından gelen siparişleri karşılamak için Amazon'un ağını kullanın",
+    fbaProcessTitle: "FBA Süreç Genel Bakışı",
+    fbaProcessDescription:
+      "Envanter gönder → Amazon alır & depolar → Müşteri sipariş verir → Amazon toplar, paketler & gönderir → Amazon müşteri hizmetini halleder",
+
+    // FBM Expanded
+    fbmDescriptionExpanded:
+      "Satıcı Tarafından Fulfillment (FBM), envanteriniz ve fulfillment süreciniz üzerinde tam kontrol sağlar. Ürünleri kendi deponuzda veya üçüncü taraf lojistik sağlayıcısında depolarsınız, toplama, paketleme, gönderme ve müşteri hizmetini halledersiniz. Bu model daha fazla esneklik ve potansiyel olarak daha yüksek kar marjları sunarken doğrudan müşteri ilişkilerini korur.",
+    fbmFeature1: "Tam Envanter Kontrolü",
+    fbmFeature1Detail: "Stok seviyeleri, depolama koşulları ve envanter yönetimi üzerinde tam kontrol sağlayın",
+    fbmFeature2: "Özel Markalama & Paketleme",
+    fbmFeature2Detail: "Özel paketleme ve eklerle benzersiz açma deneyimleri yaratın",
+    fbmFeature3: "Doğrudan Müşteri İlişkileri",
+    fbmFeature3Detail: "Kişiselleştirilmiş hizmet aracılığıyla müşterilerle doğrudan ilişkiler kurun",
+    fbmFeature4: "Esnek Kargo Seçenekleri",
+    fbmFeature4Detail: "Maliyetleri optimize etmek için birden fazla kargo şirketi ve gönderim yönteminden seçim yapın",
+    fbmProcessTitle: "FBM Süreç Genel Bakışı",
+    fbmProcessDescription:
+      "Envanter depola → Siparişleri al → Ürünleri topla & paketle → Müşterilere gönder → Müşteri hizmeti & iadeleri halleder",
+
+    // Comparison Table
+    fbaVsFbmTitle: "FBA vs FBM Karşılaştırması",
+    fbaVsFbmDescription: "İşiniz için doğru fulfillment yöntemini seçmek için temel farkları anlayın",
+    feature: "Özellik",
+    storageLocation: "Depolama Yeri",
+    amazonWarehouses: "Amazon Depoları",
+    yourWarehouse: "Sizin Deponuz/3PL",
+    shippingSpeed: "Kargo Hızı",
+    primeEligible: "Prime Uygun (1-2 gün)",
+    standardShipping: "Standart (3-7 gün)",
+    customerService: "Müşteri Hizmeti",
+    amazonHandles: "Amazon Halleder",
+    youHandle: "Siz Halledersiniz",
+    inventoryControl: "Envanter Kontrolü",
+    limited: "Sınırlı",
+    fullControl: "Tam Kontrol",
+    costStructure: "Maliyet Yapısı",
+    higherFees: "Daha Yüksek Ücretler, Daha Az Çaba",
+    lowerFees: "Daha Düşük Ücretler, Daha Fazla Çaba",
+
+    // Process Section
+    howItWorks: "Nasıl Çalışır",
+    howItWorksDescription: "Akıcı sürecimiz iş operasyonlarınızla sorunsuz entegrasyon sağlar",
+    step1Title: "Danışmanlık & Kurulum",
+    step1Description:
+      "İş ihtiyaçlarınızı analiz ederiz ve ürünlerinize ve hacim gereksinimlerinize uygun özelleştirilmiş fulfillment çözümleri kurarız.",
+    step2Title: "Envanter Entegrasyonu",
+    step2Description:
+      "Gerçek zamanlı takip ve otomatik yeniden sipariş için envanter yönetim sistemlerinizi platformumuzla sorunsuz entegre edin.",
+    step3Title: "Sipariş İşleme",
+    step3Description:
+      "Siparişler otomatik olarak işlenir, toplanır, paketlenir ve optimize edilmiş iş akışlarımız ve kalite kontrol önlemlerimizle gönderilir.",
+    step4Title: "Takip & Analitik",
+    step4Description:
+      "Sürekli optimizasyon için detaylı analitikler, takip bilgileri ve kapsamlı raporlama araçlarıyla performansı izleyin.",
 
     // Features
     whyChooseUs: "Neden Bizi Seçmelisiniz",
     whyChooseUsDescription: "Güvenilir, verimli ve uygun maliyetli fulfillment çözümleri sağlıyoruz",
     globalReach: "Küresel Erişim",
-    globalReachDescription: "Uluslararası fulfillment ağımızla dünya çapında müşterilere hizmet verin",
+    globalReachDescription:
+      "15+ ülkeyi kapsayan uluslararası fulfillment ağımızla dünya çapında müşterilere hizmet verin",
     fastProcessing: "Hızlı İşleme",
-    fastProcessingDescription: "14:00'den önce alınan siparişler için aynı gün işleme",
+    fastProcessingDescription: "14:00'den önce alınan siparişler için %99,8 doğruluk oranıyla aynı gün işleme",
     secureHandling: "Güvenli Taşıma",
-    secureHandlingDescription: "7/24 güvenlik izlemeli son teknoloji tesisler",
+    secureHandlingDescription: "7/24 güvenlik izleme ve iklim kontrollü depolama ile son teknoloji tesisler",
 
     // CTA
     readyToStart: "Başlamaya Hazır mısınız?",
